@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width = device-width, initial-scale = 1.0">
+    <meta http-equiv = "X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.google.com/specimen/Bebas+Neue" rel="stylesheet">
+    <link rel="stylesheet" href="Home.css">
+    <link rel="stylesheet" href="Dropdown.css">
+    <title>G9 Page | SNHS</title>
+</head>
+
+<body>
+    <nav>
+     
+        <div class = "logo-image">
+            <img src = "SNHS_logo.png" alt="SNHS" width="100" height="100">
+        </div>
+        <ul class="nav-links">
+            <link href="https://fonts.google.com/specimen/Teko" rel="stylesheet">
+            <li><a href="Sections.html"><b>Departments</b></a></li>
+            <li><a href="Map.html">Map of School</a></li>
+            <li><a href="Home.html">Home</a></li>
+            <li><a href="Library.html">Library</a></li>
+            <li><a href="about.html">About</a></li>
+        </ul>
+    </nav>
+<div class="sidebar">
+  <section id="sched">
+    <div class="txtH">
+      <br>
+        GRADE 9
+    </div>
+
+<br><br>
+
+    <div class="dropdown">
+      <button class="dropbtn" onclick="toggleDropdown('dropdown1')">SSC</button>
+      <div id="dropdown1" class="dropdown-content">
+        <a href="Charles.html">9 CHARLES</a>
+      </div>
+    </div>
+  
+    <div class="dropdown">
+      <button class="dropbtn" onclick="toggleDropdown('dropdown2')">SPM</button>
+      <div id="dropdown2" class="dropdown-content">
+        <a href="Euclid.html">9 EUCLID</a>
+      </div>
+    </div>
+  
+    <div class="dropdown">
+      <button class="dropbtn" onclick="toggleDropdown('dropdown3')">REGULAR</button>
+      <div id="dropdown3" class="dropdown-content">
+        <a href="Eucalyptus.html">9 EUCALYPTUS</a>
+        <a href="Molave.html">9 MOLAVE</a>
+        <a href="Pine.html">9 PINE</a>
+        <a href="Narra.html">9 NARRA</a>
+        <a href="Laurel.html">9 LAUREL</a>
+        <a href="Mahogany.html">9 MAHOGANY</a>
+      </div>
+    </div>
+  </section>
+</div>
+
+    <script>
+      function toggleDropdown(dropdownId) {
+        var dropdownContent = document.getElementById(dropdownId);
+        if (dropdownContent.style.display === 'block') {
+          dropdownContent.style.display = 'none';
+        } else {
+          dropdownContent.style.display = 'block';
+        }
+      }
+    </script>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width = device-width, initial-scale = 1.0">
+    <meta http-equiv = "X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.google.com/specimen/Bebas+Neue" rel="stylesheet">
+    <link rel="stylesheet" href="Home.css">
+    <link rel="stylesheet" href="Dropdown.css">
+    <title>G12 Page | SNHS</title>
+</head>
+
+<body>
+    <nav>
+     
+        <div class = "logo-image">
+            <img src = "SNHS_logo.png" alt="SNHS" width="100" height="100">
+        </div>
+        <ul class="nav-links">
+            <link href="https://fonts.google.com/specimen/Teko" rel="stylesheet">
+            <li><a href="Sections.html"><b>Departments</b></a></li>
+            <li><a href="Map.html">Map of School</a></li>
+            <li><a href="Home.html">Home</a></li>
+            <li><a href="Library.html">Library</a></li>
+            <li><a href="about.html">About</a></li>
+        </ul>
+    </nav>
+<div class="sidebar">
+  <section id="sched">
+    <div class="txtH">
+      <br>
+        GRADE 12
+    </div>
+
+<br><br>
+
+    <div class="dropdown">
+      <button class="dropbtn" onclick="toggleDropdown('dropdown1')">STEM</button>
+      <div id="dropdown1" class="dropdown-content">
+        <a href="Ruther.html">12 RUTHERFORD</a>
+        <a href="Hawking.html">12 HAWKING</a>
+      </div>
+    </div>
+  
+    <div class="dropdown">
+      <button class="dropbtn" onclick="toggleDropdown('dropdown2')">ABM</button>
+      <div id="dropdown2" class="dropdown-content">
+        <a href="Bezos.html">12 BEZOS</a>
+       
+      </div>
+    </div>
+  
+    <div class="dropdown">
+      <button class="dropbtn" onclick="toggleDropdown('dropdown3')">GAS</button>
+      <div id="dropdown3" class="dropdown-content">
+        <a href="Locke.html">12 LOCKE</a>
+      </div>
+    </div>
+
+    <div class="dropdown">
+        <button class="dropbtn" onclick="toggleDropdown('dropdown4')">HUMMS</button>
+        <div id="dropdown4" class="dropdown-content">
+          <a href="Comte.html">12 COMTE</a>
+          <a href="B.html">12 B</a>
+          <a href="C.html">12 C</a>
+        </div>
+      </div>
+
+      <div class="dropdown">
+        <button class="dropbtn" onclick="toggleDropdown('dropdown5')">TVL</button>
+        <div id="dropdown5" class="dropdown-content">
+          <a href="Aqua.html">12 AQUAVER</a>
+          <a href="Ramsay.html">12 RAMSAY</a>
+        </div>
+      </div>
+
+  </section>
+</div>
+
+    <script>
+      function toggleDropdown(dropdownId) {
+        var dropdownContent = document.getElementById(dropdownId);
+        if (dropdownContent.style.display === 'block') {
+          dropdownContent.style.display = 'none';
+        } else {
+          dropdownContent.style.display = 'block';
+        }
+      }
+    </script>
